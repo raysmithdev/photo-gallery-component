@@ -1,7 +1,11 @@
-import React from 'react';
-import { render } from 'react-dom';
+import React from 'react'
+import { render } from 'react-dom'
+import App from './components/App.jsx'
+import injectTapEventPlugin from 'react-tap-event-plugin'
+
+injectTapEventPlugin()
 
 render(
-  <h1>React ES6 Starter</h1>,
+  <App />,
   document.getElementById('root')
-);
+)
